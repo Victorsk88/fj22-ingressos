@@ -26,7 +26,7 @@ public class SessaoTest {
 		
 		Set<Ingresso> ingressos = Stream.of(ingresso).collect(Collectors.toSet());
 		
-		
+		sessao.setIngressos(ingressos);
 		
 		Assert.assertFalse(sessao.isDisponivel(a1));
 		Assert.assertTrue(sessao.isDisponivel(a2));
